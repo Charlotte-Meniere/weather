@@ -69,6 +69,8 @@ export default {
       const key = "deb94c66b660a028475b4c55b068dc12";
       const callURL = `https://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&units=metric`;
 
+      console.log("Ouais ouais ouais !");
+
       // appel a l'api avec un await dans un try catch
       try {
         const response = await fetch(callURL);
