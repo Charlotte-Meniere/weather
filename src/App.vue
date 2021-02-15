@@ -67,7 +67,7 @@ export default {
     getWeather: async function() {
       console.log(this.citySearch);
       const key = "deb94c66b660a028475b4c55b068dc12";
-      const callURL = `http://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&units=metric`;
+      const callURL = `https://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&units=metric`;
 
       // appel a l'api avec un await dans un try catch
       try {
@@ -92,7 +92,6 @@ export default {
         } else {
           this.isDay = true;
         }
-
       } catch (error) {
         console.log(error);
         this.searchResult = false;
@@ -128,7 +127,6 @@ img {
   width: 5vw;
 }
 #app {
-
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
