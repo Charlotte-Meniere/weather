@@ -92,6 +92,7 @@ export default {
         } else {
           this.isDay = true;
         }
+
       } catch (error) {
         console.log(error);
         this.searchResult = false;
@@ -127,6 +128,7 @@ img {
   width: 5vw;
 }
 #app {
+
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
